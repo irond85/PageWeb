@@ -1,12 +1,11 @@
-import { useState } from "react";
-import HeaderComponent from "./components/HeaderComponent";
+import MainPageView from "./views/MainPageView";
 import "./App.css";
 
 function App() {
 
   return (
     <>
-      <HeaderComponent />
+      <MainPageView />
     </>
   );
 }
