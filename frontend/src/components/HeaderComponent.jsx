@@ -24,7 +24,7 @@ const HeaderComponent = () => {
           padding: 0,
           backgroundColor: "white",
           borderBottom: "1px solid #aaa",
-          
+          height: "6rem",
         }}
       >
         <div className="divLogo">

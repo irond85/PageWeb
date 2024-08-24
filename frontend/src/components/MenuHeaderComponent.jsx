@@ -76,7 +76,7 @@ const MenuHeaderComponent = () => {
       selectedKeys={[current]}
       mode="horizontal"
       items={items}
-      style={{borderBottom: "1px solid #aaa",}}
+      style={{borderBottom: "none", fontSize: "1rem"}}
     />
   );
 };
