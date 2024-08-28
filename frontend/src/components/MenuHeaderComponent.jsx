@@ -9,7 +9,7 @@ import { Menu } from "antd";
 const items = [
   {
     label: (
-        <a href="/servicios" target="_blank" rel="noopener noreferrer">
+        <a href="#services" style={{ textDecoration: "none" }} rel="noopener noreferrer">
           Servicios
         </a>
       ),

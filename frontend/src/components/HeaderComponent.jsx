@@ -12,12 +12,15 @@ const items = new Array(3).fill(null).map((_, index) => ({
 }));
 const HeaderComponent = () => {
   return (
-    <Layout>
+    <Layout
+      style={{
+        position: "sticky",
+        top: 0,
+        zIndex: 10, //esta propiedad permite colocar en el top el header
+      }}
+    >
       <Header
         style={{
-          position: "sticky",
-          top: 0,
-          zIndex: 1,
           width: "100%",
           display: "flex",
           alignItems: "center",
