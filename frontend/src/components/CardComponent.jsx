@@ -1,10 +1,12 @@
 import React from "react";
-import { Card } from "antd";
+import { Card, Divider } from "antd";
 const { Meta } = Card;
+
+const styleColumns = { marginTop: "1%" };
+const styleContain = { width: "100%", height: "100%", objectFit: "contain" };
 
 const CardComponent = ({ srcImgCard, titleCard, descriptionCard }) => {
   const altImg = "image" + titleCard;
-  const styleColumns = { marginTop: "1%" };
 
   return (
     <>
@@ -17,9 +19,11 @@ const CardComponent = ({ srcImgCard, titleCard, descriptionCard }) => {
           style={{
             width: "100%",
             height: "100%",
+            objectFit: "contain",
           }}
-          cover={<img alt={altImg} src={srcImgCard} />}
         >
+          <img style={styleContain} alt={altImg} src={srcImgCard} />
+          <Divider />
           <a href="" style={{ textDecoration: "none" }}>
             <Meta title={titleCard} description={descriptionCard} />
           </a>
