@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Col, Row } from "antd";
+import { Layout, Col } from "antd";
 import "../App.css";
 import MenuHeaderComponent from "./MenuHeaderComponent";
 import { HomeOutlined } from "@ant-design/icons";
@@ -41,7 +41,7 @@ const HeaderComponent = () => {
           <MenuHeaderComponent />
         </Col>
         <div>
-          <a href="/dashboard" target="_blank">
+          <a href="/">
             <HomeOutlined style={{ fontSize: "2rem", color: "#08c" }} />
           </a>
         </div>
