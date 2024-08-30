@@ -4,16 +4,16 @@ import "../styles/Components.css";
 
 const contentStyle = {
   margin: 0,
-  height: "20%",
+  height: "500px",
   color: "#fff",
-  lineHeight: "30rem",
+  lineHeight: "500px",
   textAlign: "center",
   background: "#364d79",
 };
 
 const CarouselComponent = () => (
   <>
-    <Carousel arrows autoplay autoplaySpeed={8000}>
+    <Carousel style={{height: "500px"}} arrows autoplay autoplaySpeed={8000}>
       <div>
         <div style={contentStyle}>
           <img src="" alt="Primera imagen" />
@@ -30,7 +30,6 @@ const CarouselComponent = () => (
         </div>
       </div>
     </Carousel>
-    <br />
   </>
 );
 export default CarouselComponent;
