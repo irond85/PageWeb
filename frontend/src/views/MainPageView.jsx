@@ -5,6 +5,7 @@ import CarouselComponent from "../components/CarouselComponent.jsx";
 import SectionComponent from "../components/SectionComponent.jsx";
 import FloatButtonComponent from "../components/FloatButtonComponent.jsx";
 import CardComponent from "../components/CardComponent.jsx";
+import OptionsComponent from "../components/OptionsComponent.jsx";
 import { Button, Tooltip } from "antd";
 import reactSvg from "../assets/react.svg";
 import whatsappIcon from "../assets/whatsappIcon.png";
@@ -65,7 +66,7 @@ function MainPageView() {
       <br />
       <SectionComponent
         heightSection="100%"
-        titleSection="Servicios Destacados"
+        titleSection="SOLICITA NUESTROS SERVICIOS DESTACADOS"
       >
         <CardComponent
           srcImgCard={reactSvg}
@@ -80,7 +81,25 @@ function MainPageView() {
           descriptionCard={"Esta es la descripcion de Instalación de Gas."}
         />
       </SectionComponent>
-      <br />
+      <SectionComponent heightSection="100%" colorBackground="#fff">
+        <div
+          className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+          style={{ textAlign: "center", alignContent: "center" }}
+        >
+          <div className="row">
+            <h1>PONTE EN CONTACTO</h1>
+          </div>
+          <div className="row">
+            <p>
+              Contamos con varias opciones para que te comuniques con nosotros y
+              recibas una solución rápida.
+            </p>
+          </div>
+        </div>
+        <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+          <OptionsComponent />
+        </div>
+      </SectionComponent>
       <FloatButtonComponent />
     </>
   );
