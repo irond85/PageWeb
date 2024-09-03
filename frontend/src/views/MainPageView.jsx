@@ -17,15 +17,12 @@ function MainPageView() {
     <>
       <HeaderComponent />
       <CarouselComponent />
-      <SectionComponent
-        colorBackground="#F79F18"
-        heightSection="100%"
-        titleSection="SOLICITA UN SERVICIO"
-      >
+      <SectionComponent colorBackground="#F79F18" heightSection="100%">
         <div
           className="col-5 col-sm-4 col-md-4 col-lg-3 col-xl-2 col-xxl-6"
-          style={{ display: "flex", justifyContent: "center" }}
+          style={{ justifyContent: "center", textAlign: "center" }}
         >
+          <h2>SOLICITA UN SERVICIO</h2>
           <p>
             ¿Tienes un problema y necesitas una solución rápida? Comunícate con
             nosotros a través de nuestro WhatsApp.
@@ -39,6 +36,7 @@ function MainPageView() {
             type="primary"
             shape="round"
             style={{ background: "#fff", color: "#000" }}
+            size="large"
           >
             <img
               style={{ width: "100%", height: "100%", objectFit: "contain" }}
@@ -98,6 +96,80 @@ function MainPageView() {
         </div>
         <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
           <OptionsComponent />
+        </div>
+      </SectionComponent>
+      <SectionComponent
+        heightSection="100%"
+        titleSection="¿POR QUÉ ELEGIRNOS?"
+        colorBackground="#fff"
+      >
+        <div className="row" style={{ justifyContent: "center" }}>
+          <CardComponent
+            srcImgCard={reactSvg}
+            titleCard={"Técnicos Especializados"}
+            descriptionCard={"En cada uno de nuestros servicios."}
+            hoverCard={false}
+            dividerCard={false}
+          />
+          <CardComponent
+            srcImgCard={reactSvg}
+            titleCard={"Agendamiento de Servicios"}
+            descriptionCard={
+              "La cita será agendada en el horario que usted prefiera, sujeto a confirmación de disponibilidad."
+            }
+            hoverCard={false}
+            dividerCard={false}
+          />
+          <CardComponent
+            srcImgCard={reactSvg}
+            titleCard={"Multiples Servicios"}
+            descriptionCard={
+              "Gran variedad de servicios para atender sus necesidades."
+            }
+            hoverCard={false}
+            dividerCard={false}
+          />
+          <CardComponent
+            srcImgCard={reactSvg}
+            titleCard={"Herramientas Especializadas"}
+            descriptionCard={
+              "Contamos con herramientas calificadas y certificadas para cada servicio."
+            }
+            hoverCard={false}
+            dividerCard={false}
+          />
+          <CardComponent
+            srcImgCard={reactSvg}
+            titleCard={"Garantía y confianza"}
+            descriptionCard={"La certeza de un trabajo bien hecho."}
+            hoverCard={false}
+            dividerCard={false}
+          />
+        </div>
+      </SectionComponent>
+      <SectionComponent colorBackground="#F79F18" heightSection="100%">
+        <div
+          className="col-5 col-sm-4 col-md-4 col-lg-3 col-xl-2 col-xxl-6"
+          style={{ justifyContent: "center", textAlign: "center" }}
+        >
+          <p>
+            ¿Necesitas que un técnico se encargue de alguna reparación o
+            instalación en tu casa u oficina?
+          </p>
+          <h2>RESPUESTA OPORTUNA A TUS EMERGENCIAS</h2>
+        </div>
+        <div
+          className="col-5 col-sm-4 col-md-4 col-lg-3 col-xl-2 col-xxl-3"
+          style={{ display: "flex", alignItems: "center" }}
+        >
+          <Button
+            type="primary"
+            shape="round"
+            style={{ background: "#fff", color: "#000" }}
+            size="large"
+          >
+            <strong>SOLICITAR SERVICIO</strong>
+          </Button>
         </div>
       </SectionComponent>
       <FloatButtonComponent />
