@@ -14,12 +14,17 @@ p {
   font-size: 16px;
 }
 
-.news-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
+@media (min-width: 1001px) {
+  .news-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 25%;
+    justify-content: center;
+    height: 25%;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .news-wrapper {
     display: flex;
     flex-flow: row nowrap;

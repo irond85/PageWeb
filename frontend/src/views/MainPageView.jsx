@@ -7,6 +7,7 @@ import FloatButtonComponent from "../components/FloatButtonComponent.jsx";
 import CardComponent from "../components/CardComponent.jsx";
 import OptionsComponent from "../components/OptionsComponent.jsx";
 import StatsComponent from "../components/StatsComponent.jsx";
+import FooterComponent from "../components/FooterComponent.jsx";
 import { Button } from "antd";
 import reactSvg from "../assets/react.svg";
 import whatsappIcon from "../assets/whatsappIcon.png";
@@ -48,20 +49,14 @@ function MainPageView() {
           </Button>
         </div>
       </SectionComponent>
-      <div id="services">
-        <Title
-          level={1}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            margin: "0px !important",
-          }}
-          id="services"
-        >
-          Nuestros Servicios
-        </Title>
+
+      <SectionComponent
+        colorBackground="#FFF"
+        heightSection="100%"
+        titleSection="Nuestros Servicios"
+      >
         <ServicesView />
-      </div>
+      </SectionComponent>
       <br />
       <SectionComponent
         heightSection="100%"
@@ -214,6 +209,17 @@ function MainPageView() {
           />
         </div>
       </SectionComponent>
+      <SectionComponent
+        colorBackground="#FFF"
+        heightSection="100%"
+        titleSection="NUESTROS CLIENTES"
+      >
+        <div className="row news-wrapper">
+          <img src="out" alt="primera imagen" />
+          <img src="out" alt="segunda imagen" />
+        </div>
+      </SectionComponent>
+      <FooterComponent />
       <FloatButtonComponent />
     </>
   );
