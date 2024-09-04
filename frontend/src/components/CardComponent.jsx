@@ -10,15 +10,16 @@ const CardComponent = ({
   descriptionCard,
   hoverCard = true,
   dividerCard = true,
+  colsFormat = true,
 }) => {
   const altImg = "image" + titleCard;
+  const className = colsFormat
+    ? "col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-3"
+    : "";
 
   return (
     <>
-      <div
-        style={styleColumns}
-        className="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-3"
-      >
+      <div style={styleColumns} className={className}>
         <a href="" style={{ textDecoration: "none" }}>
           <Card
             hoverable={hoverCard}

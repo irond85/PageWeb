@@ -1,15 +1,28 @@
 .divLogo {
-    width: 20%;
-    height: 100%;
-    margin: 0 2%;
+  width: 20%;
+  height: 100%;
+  margin: 0 2%;
 }
 
 .logo {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 p {
-    font-size: 16px;
+  font-size: 16px;
+}
+
+.news-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+@media (max-width: 768px) {
+  .news-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+  }
 }
