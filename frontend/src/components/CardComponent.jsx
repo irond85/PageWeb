@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Divider } from "antd";
+import { Link } from "react-router-dom";
 
 const styleColumns = { marginTop: "1%" };
 const styleContain = { width: "100%", height: "100%", objectFit: "contain" };
@@ -11,6 +12,7 @@ const CardComponent = ({
   hoverCard = true,
   dividerCard = true,
   colsFormat = true,
+  linkTo = "",
 }) => {
   const altImg = "image" + titleCard;
   const className = colsFormat
@@ -20,7 +22,7 @@ const CardComponent = ({
   return (
     <>
       <div style={styleColumns} className={className}>
-        <a href="" style={{ textDecoration: "none" }}>
+        <Link to={linkTo} style={{ textDecoration: "none" }}>
           <Card
             hoverable={hoverCard}
             style={{
@@ -36,7 +38,7 @@ const CardComponent = ({
             <h4>{titleCard}</h4>
             <p>{descriptionCard}</p>
           </Card>
-        </a>
+        </Link>
       </div>
     </>
   );

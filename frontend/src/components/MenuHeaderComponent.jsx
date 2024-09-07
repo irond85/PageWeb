@@ -5,14 +5,19 @@ import {
   InfoCircleOutlined,
 } from "@ant-design/icons";
 import { Menu } from "antd";
+import { Link } from "react-router-dom";
 
 const items = [
   {
     label: (
-        <a href="#services" style={{ textDecoration: "none" }} rel="noopener noreferrer">
-          Servicios
-        </a>
-      ),
+      <Link
+        to="services"
+        style={{ textDecoration: "none" }}
+        rel="noopener noreferrer"
+      >
+        Servicios
+      </Link>
+    ),
     key: "services",
     icon: <ProductOutlined />,
     children: [
@@ -55,7 +60,7 @@ const items = [
   {
     label: "¿Quienes somos?",
     key: "we",
-    icon: <DatabaseOutlined />,    
+    icon: <DatabaseOutlined />,
   },
   {
     label: "Contacta con nosotros",
@@ -76,7 +81,7 @@ const MenuHeaderComponent = () => {
       selectedKeys={[current]}
       mode="horizontal"
       items={items}
-      style={{borderBottom: "none", fontSize: "1rem"}}
+      style={{ borderBottom: "none", fontSize: "1rem" }}
     />
   );
 };

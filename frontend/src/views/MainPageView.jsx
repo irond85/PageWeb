@@ -1,5 +1,3 @@
-import { Typography } from "antd";
-import ServicesView from "./ServicesView.jsx";
 import HeaderComponent from "../components/HeaderComponent.jsx";
 import CarouselComponent from "../components/CarouselComponent.jsx";
 import SectionComponent from "../components/SectionComponent.jsx";
@@ -11,8 +9,7 @@ import FooterComponent from "../components/FooterComponent.jsx";
 import { Button } from "antd";
 import reactSvg from "../assets/react.svg";
 import whatsappIcon from "../assets/whatsappIcon.png";
-
-const { Title } = Typography;
+import ServicesComponent from "../components/ServicesComponent.jsx";
 
 function MainPageView() {
   return (
@@ -55,7 +52,7 @@ function MainPageView() {
         heightSection="100%"
         titleSection="Nuestros Servicios"
       >
-        <ServicesView />
+        <ServicesComponent />
       </SectionComponent>
       <br />
       <SectionComponent
