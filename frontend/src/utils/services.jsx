@@ -4,6 +4,7 @@ const services = [
     serviceType: "electricidad",
     serviceName: "Electricidad 1",
     serviceDetail: "Servicio de electricidad #1",
+    serviceList: ["a","b"],
     serviceImage: "",
   },
   {
@@ -11,6 +12,7 @@ const services = [
     serviceType: "electricidad",
     serviceName: "Electricidad 2",
     serviceDetail: "Servicio de electricidad #2",
+    serviceList: ["a","b"],
     serviceImage: "",
   },
   {
@@ -18,6 +20,7 @@ const services = [
     serviceType: "plomeria",
     serviceName: "Plomeria 1",
     serviceDetail: "Servicio de plomeria #1",
+    serviceList: ["a","b"],
     serviceImage: "",
   },
 ];

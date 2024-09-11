@@ -1,12 +1,11 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import CardComponent from "../components/CardComponent.jsx";
 import HeaderComponent from "../components/HeaderComponent.jsx";
 import FloatButtonComponent from "../components/FloatButtonComponent.jsx";
 import FooterComponent from "../components/FooterComponent.jsx";
 import reactSvg from "../assets/react.svg";
-import { Link, useParams } from "react-router-dom";
-import { Typography } from "antd";
+import { useParams } from "react-router-dom";
+import { Typography, Row, Image } from "antd";
 const { Title, Paragraph } = Typography;
 import SectionComponent from "../components/SectionComponent.jsx";
 import services from "../utils/services.jsx";
@@ -18,9 +17,6 @@ function DetailedServiceView() {
   if (serviceType == "servicios") {
     servicesSelected = services;
   }
-
-  console.log(services);
-  console.log(serviceType);
 
   services.forEach(function (obj, indice) {
     if (obj.idService == idService && obj.serviceType == serviceType) {
@@ -35,19 +31,25 @@ function DetailedServiceView() {
       <HeaderComponent />
       <SectionComponent
         titleSection={serviceSelected.serviceName.toLocaleUpperCase()}
+        colorBackground="#fff"
       >
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <p>{serviceSelected.idService}</p>
-          {/* {servicesSelected.map((service, index) => (
-            <CardComponent
-              key={service.idService}
-              titleCard={service.serviceName}
-              descriptionCard={service.serviceDetail}
-              srcImgCard={service.serviceImage}
-              linkTo={`${service.idService}`}
-            />
-          ))} */}
-        </div>
+        <Row>
+          <div
+            className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
+            <Image width={"50%"} src={reactSvg} />
+          </div>
+          <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <div className="row">
+              <Paragraph style={{ fontSize: "18px" }}>
+                Ofrecemos un servicio profesional y completo de{" "}
+                {serviceSelected.serviceDetail}. <br />
+                Este servicio incluye:
+              </Paragraph>
+            </div>
+          </div>
+        </Row>
       </SectionComponent>
       <FooterComponent />
       <FloatButtonComponent />
