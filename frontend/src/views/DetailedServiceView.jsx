@@ -11,27 +11,34 @@ const { Title, Paragraph } = Typography;
 import SectionComponent from "../components/SectionComponent.jsx";
 import services from "../utils/services.jsx";
 
-function ServicesView() {
-  let servicesSelected = [];
-  const { serviceType = "servicios" } = useParams();
+function DetailedServiceView() {
+  let serviceSelected = null;
+  const { idService, serviceType } = useParams();
 
   if (serviceType == "servicios") {
     servicesSelected = services;
   }
 
+  console.log(services);
+  console.log(serviceType);
+
   services.forEach(function (obj, indice) {
-    if (obj.serviceType == serviceType) {
-      servicesSelected.push(obj);
+    if (obj.idService == idService && obj.serviceType == serviceType) {
+      serviceSelected = obj;
+      return;
     }
   });
-  console.log(servicesSelected);
+  console.log(serviceSelected);
 
   return (
     <>
       <HeaderComponent />
-      <SectionComponent titleSection={serviceType.toLocaleUpperCase()}>
+      <SectionComponent
+        titleSection={serviceSelected.serviceName.toLocaleUpperCase()}
+      >
         <div style={{ display: "flex", justifyContent: "center" }}>
-          {servicesSelected.map((service, index) => (
+          <p>{serviceSelected.idService}</p>
+          {/* {servicesSelected.map((service, index) => (
             <CardComponent
               key={service.idService}
               titleCard={service.serviceName}
@@ -39,7 +46,7 @@ function ServicesView() {
               srcImgCard={service.serviceImage}
               linkTo={`${service.idService}`}
             />
-          ))}
+          ))} */}
         </div>
       </SectionComponent>
       <FooterComponent />
@@ -48,4 +55,4 @@ function ServicesView() {
   );
 }
 
-export default ServicesView;
+export default DetailedServiceView;
