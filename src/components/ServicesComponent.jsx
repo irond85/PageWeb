@@ -1,9 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CardComponent from "../components/CardComponent.jsx";
-import images from "../styles/images.jsx";
-import reactSvg from '../assets/react.svg'
-const { electricidad1, plomeria2 } = images;
+import images from "../utils/images.jsx";
+import reactSvg from "../assets/react.svg";
+const {
+  electricidad1,
+  plomeria2,
+  vidrieria,
+  destaponamiento,
+  obras,
+  instalaciones,
+  redGas,
+} = images;
 
 const ServicesComponent = () => {
   const styleRows = { justifyContent: "center", margin: "0 5%" };
@@ -28,29 +36,40 @@ const ServicesComponent = () => {
           linkTo="services/plomeria"
         />
         <CardComponent
-          srcImgCard={reactSvg}
-          titleCard={"Electricidad"}
-          descriptionCard={"Esta es la descripcion de electricidad"}
+          srcImgCard={vidrieria}
+          titleCard={"Vidrieria"}
+          descriptionCard={
+            "Esta es la descripcion de vidrieria y sus servicios."
+          }
+          linkTo="services/vidrieria"
         />
         <CardComponent
-          srcImgCard={reactSvg}
-          titleCard={"Electricidad"}
-          descriptionCard={"Esta es la descripcion de electricidad"}
+          srcImgCard={obras}
+          titleCard={"Obras y Reformas"}
+          descriptionCard={"Esta es la descripcion de albañileria."}
+          linkTo="services/obras"
         />
         <CardComponent
-          srcImgCard={reactSvg}
-          titleCard={"Electricidad"}
-          descriptionCard={"Esta es la descripcion de electricidad"}
+          srcImgCard={destaponamiento}
+          titleCard={"Destaponamiento con Sonda Eléctrica"}
+          descriptionCard={
+            "Esta es la descripcion de servicios de destaponamiento."
+          }
+          linkTo="services/destaponamiento"
         />
         <CardComponent
-          srcImgCard={reactSvg}
-          titleCard={"Electricidad"}
-          descriptionCard={"Esta es la descripcion de electricidad"}
+          srcImgCard={instalaciones}
+          titleCard={"Instalaciones"}
+          descriptionCard={
+            "Servicios de instalación de multiples electrodomesticos y productos."
+          }
+          linkTo="services/instalaciones"
         />
         <CardComponent
-          srcImgCard={reactSvg}
-          titleCard={"Electricidad"}
-          descriptionCard={"Esta es la descripcion de electricidad"}
+          srcImgCard={redGas}
+          titleCard={"Red de Gas"}
+          descriptionCard={"Servicios de redes de gas."}
+          linkTo="services/gases"
         />
       </div>
     </>
