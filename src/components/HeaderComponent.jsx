@@ -3,6 +3,7 @@ import { Layout, Col } from "antd";
 import "../App.css";
 import MenuHeaderComponent from "./MenuHeaderComponent";
 import { HomeOutlined } from "@ant-design/icons";
+import logo from "../assets/logo.jpg";
 
 const { Header } = Layout;
 const nameItems = ["Servicios", "Nuestros trabajos", "Contacto"];
@@ -33,7 +34,7 @@ const HeaderComponent = () => {
         <div className="divLogo">
           <img
             className="logo"
-            src="https://unavatar.io/irond85"
+            src={logo}
             alt="Logo pagina web"
           />
         </div>

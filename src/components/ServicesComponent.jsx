@@ -2,7 +2,6 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CardComponent from "../components/CardComponent.jsx";
 import images from "../utils/images.jsx";
-import reactSvg from "../assets/react.svg";
 const {
   electricidad1,
   plomeria2,
