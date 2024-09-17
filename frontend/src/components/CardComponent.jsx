@@ -16,7 +16,7 @@ const CardComponent = ({
 }) => {
   const altImg = "image" + titleCard;
   const className = colsFormat
-    ? "col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-3"
+    ? "col-12 col-sm-12 col-md-4 col-lg-3 col-xl-2 col-xxl-3"
     : "";
 
   return (
@@ -30,9 +30,12 @@ const CardComponent = ({
               height: "100%",
               objectFit: "contain",
               textAlign: "center",
+              padding: "5px",
             }}
           >
-            <img style={styleContain} alt={altImg} src={srcImgCard} />
+            <div style={{height: "250px"}}>
+              <img style={styleContain} alt={altImg} src={srcImgCard} />
+            </div>
             <div>{dividerCard && <Divider />}</div>
 
             <h4>{titleCard}</h4>
