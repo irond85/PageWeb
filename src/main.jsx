@@ -6,6 +6,7 @@ import { Route, Routes, BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import ServicesView from "./views/ServicesView.jsx";
 import DetailedServiceView from "./views/DetailedServiceView.jsx";
+import NotFoundView from "./views/NotFoundView.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -26,6 +27,7 @@ createRoot(document.getElementById("root")).render(
           }}
           element={<DetailedServiceView />}
         />
+        <Route path="*" element={<NotFoundView />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
