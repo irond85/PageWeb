@@ -4,6 +4,7 @@ import "../App.css";
 import MenuHeaderComponent from "./MenuHeaderComponent";
 import { HomeOutlined } from "@ant-design/icons";
 import logo from "../assets/logo.jpg";
+import { Link } from "react-router-dom";
 
 const { Header } = Layout;
 const nameItems = ["Servicios", "Nuestros trabajos", "Contacto"];
@@ -42,9 +43,9 @@ const HeaderComponent = () => {
           <MenuHeaderComponent />
         </Col>
         <div>
-          <a href="/">
+          <Link to="/PageWeb/">
             <HomeOutlined style={{ fontSize: "2rem", color: "#08c" }} />
-          </a>
+          </Link>
         </div>
       </Header>
     </Layout>
