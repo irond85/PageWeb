@@ -12,18 +12,20 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="services/:serviceType" element={<ServicesView />} />
+        <Route path="/PageWeb/" element={<App />} />
         <Route
-          path="services/:serviceType/:idService"
+          path="/PageWeb/services/:serviceType"
+          element={<ServicesView />}
+        />
+        <Route
+          path="/PageWeb/services/:serviceType/:idService"
           loader={({ params }) => {
-            params.serviceType; // abc
-            params.idService; // 3
+            params.serviceType;
+            params.idService;
           }}
-          // and actions
           action={({ params }) => {
-            params.serviceType; // abc
-            params.idService; // 3
+            params.serviceType;
+            params.idService;
           }}
           element={<DetailedServiceView />}
         />
