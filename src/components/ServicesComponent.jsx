@@ -10,6 +10,8 @@ const {
   obras,
   instalaciones,
   redGas,
+  soldadura,
+  pintura,
 } = images;
 
 const ServicesComponent = () => {
@@ -19,14 +21,6 @@ const ServicesComponent = () => {
     <>
       <div className="row" style={styleRows}>
         <CardComponent
-          srcImgCard={electricidad1}
-          titleCard={"Electricidad"}
-          descriptionCard={
-            "Esta es la descripcion de electricidad y sus servicios."
-          }
-          linkTo="services/electricidad"
-        />
-        <CardComponent
           srcImgCard={plomeria2}
           titleCard={"Plomeria"}
           descriptionCard={
@@ -35,12 +29,12 @@ const ServicesComponent = () => {
           linkTo="services/plomeria"
         />
         <CardComponent
-          srcImgCard={vidrieria}
-          titleCard={"Vidrieria"}
+          srcImgCard={electricidad1}
+          titleCard={"Electricidad"}
           descriptionCard={
-            "Esta es la descripcion de vidrieria y sus servicios."
+            "Esta es la descripcion de electricidad y sus servicios."
           }
-          linkTo="services/vidrieria"
+          linkTo="services/electricidad"
         />
         <CardComponent
           srcImgCard={obras}
@@ -49,12 +43,10 @@ const ServicesComponent = () => {
           linkTo="services/obras"
         />
         <CardComponent
-          srcImgCard={destaponamiento}
-          titleCard={"Destaponamiento con Sonda Eléctrica"}
-          descriptionCard={
-            "Esta es la descripcion de servicios de destaponamiento."
-          }
-          linkTo="services/destaponamiento"
+          srcImgCard={redGas}
+          titleCard={"Red de Gas"}
+          descriptionCard={"Servicios de redes de gas."}
+          linkTo="services/gases"
         />
         <CardComponent
           srcImgCard={instalaciones}
@@ -65,10 +57,26 @@ const ServicesComponent = () => {
           linkTo="services/instalaciones"
         />
         <CardComponent
-          srcImgCard={redGas}
-          titleCard={"Red de Gas"}
-          descriptionCard={"Servicios de redes de gas."}
-          linkTo="services/gases"
+          srcImgCard={pintura}
+          titleCard={"Pintura y Acabados"}
+          descriptionCard={
+            "Esta es la descripcion de servicios de Pintura y acabados."
+          }
+          linkTo="services/pintura"
+        />
+        <CardComponent
+          srcImgCard={soldadura}
+          titleCard={"Soldadura"}
+          descriptionCard={"Esta es la descripcion de servicios de Soldadura."}
+          linkTo="services/soldadura"
+        />
+        <CardComponent
+          srcImgCard={vidrieria}
+          titleCard={"Vidrieria"}
+          descriptionCard={
+            "Esta es la descripcion de vidrieria y sus servicios."
+          }
+          linkTo="services/vidrieria"
         />
       </div>
     </>
