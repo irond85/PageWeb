@@ -1,16 +1,18 @@
-import React from "react";
+import { Image, Row, Typography } from "antd";
 import "bootstrap/dist/css/bootstrap.min.css";
-import HeaderComponent from "../components/HeaderComponent.jsx";
+import React from "react";
+import { useParams } from "react-router-dom";
 import FloatButtonComponent from "../components/FloatButtonComponent.jsx";
 import FooterComponent from "../components/FooterComponent.jsx";
-import reactSvg from "../assets/react.svg";
-import { useParams } from "react-router-dom";
-import { Typography, Row, Image } from "antd";
-const { Title, Paragraph } = Typography;
+import HeaderComponent from "../components/HeaderComponent.jsx";
 import SectionComponent from "../components/SectionComponent.jsx";
+import scrollToTop from "../hooks/scrollToTop.jsx";
+import { imagesServices } from "../utils/images.jsx";
 import services from "../utils/services.jsx";
+const { Paragraph } = Typography;
 
 function DetailedServiceView() {
+  scrollToTop();
   let serviceSelected = null;
   const { idService, serviceType } = useParams();
 
@@ -18,13 +20,14 @@ function DetailedServiceView() {
     servicesSelected = services;
   }
 
-  services.forEach(function (obj, indice) {
+  services.forEach(function (obj) {
     if (obj.idService == idService && obj.serviceType == serviceType) {
       serviceSelected = obj;
       return;
     }
   });
-  console.log(serviceSelected);
+
+  const getImage = imagesServices.get(serviceSelected.serviceImage);
 
   return (
     <>
@@ -38,7 +41,7 @@ function DetailedServiceView() {
             className="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
             style={{ display: "flex", justifyContent: "center" }}
           >
-            <Image width={"50%"} src={reactSvg} />
+            <Image width={"50%"} src={getImage} />
           </div>
           <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
             <div className="row">

@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CardComponent from "../components/CardComponent.jsx";
-import images from "../utils/images.jsx";
+import { images } from "../utils/images.jsx";
 const {
   electricidad1,
   plomeria2,

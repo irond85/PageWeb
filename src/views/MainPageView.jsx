@@ -10,8 +10,11 @@ import { Button } from "antd";
 import reactSvg from "../assets/react.svg";
 import whatsappIcon from "../assets/whatsappIcon.png";
 import ServicesComponent from "../components/ServicesComponent.jsx";
+import scrollToTop from "../hooks/scrollToTop.jsx";
 
 function MainPageView() {
+  scrollToTop();
+
   return (
     <>
       <HeaderComponent />
