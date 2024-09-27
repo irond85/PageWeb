@@ -20,6 +20,7 @@ import s_plomeria_6 from "../assets/services/s_plomeria_6.jpg";
 import s_plomeria_7 from "../assets/services/s_plomeria_7.jpg";
 import s_plomeria_8 from "../assets/services/s_plomeria_8.jpg";
 import s_plomeria_9 from "../assets/services/s_plomeria_9.jpg";
+import s_plomeria_10 from "../assets/services/s_plomeria_10.jpg";
 
 import s_electri_1 from "../assets/services/s_electri_1.jpg";
 import s_electri_2 from "../assets/services/s_electri_2.jpg";
@@ -53,7 +54,7 @@ imagesServices.set("s_plomeria_6", s_plomeria_6);
 imagesServices.set("s_plomeria_7", s_plomeria_7);
 imagesServices.set("s_plomeria_8", s_plomeria_8);
 imagesServices.set("s_plomeria_9", s_plomeria_9);
-imagesServices.set("s_plomeria_10", s_plomeria_9);
+imagesServices.set("s_plomeria_10", s_plomeria_10);
 
 imagesServices.set("s_electri_1", s_electri_1);
 imagesServices.set("s_electri_2", s_electri_2);

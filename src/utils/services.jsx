@@ -73,7 +73,7 @@ const services = [
     serviceName: "Instalación de mezclador de ducha",
     serviceDetail: "Servicio de instalación de mezclador de ducha",
     serviceList: ["a", "b"],
-    serviceImage: "s_plomeria_4",
+    serviceImage: "s_plomeria_7",
   },
   {
     idService: "105",
@@ -83,7 +83,7 @@ const services = [
     serviceDetail:
       "Servicio de instalación de llaves de lavadero, registro, abasto y llave de paso",
     serviceList: ["a", "b"],
-    serviceImage: "s_plomeria_7",
+    serviceImage: "s_plomeria_4",
   },
   {
     idService: "106",
@@ -91,7 +91,7 @@ const services = [
     serviceName: "Desmonte e instalación de sanitarios",
     serviceDetail: "Servicio de desmonte e instalación de sanitarios",
     serviceList: ["a", "b"],
-    serviceImage: "s_plomeria_1",
+    serviceImage: "s_plomeria_10",
   },
   {
     idService: "107",
@@ -107,7 +107,7 @@ const services = [
     serviceName: "Mantenimiento de todo tipo de grifería",
     serviceDetail: "Servicio de mantenimiento de todo tipo de grifería",
     serviceList: ["a", "b"],
-    serviceImage: "s_plomeria_8",
+    serviceImage: "s_plomeria_7",
   },
   {
     idService: "109",
@@ -115,7 +115,7 @@ const services = [
     serviceName: "Reparación de fugas de agua en PVC, cobre, polipropileno",
     serviceDetail: "Servicio de reparación de fugas de agua en PVC, cobre, polipropileno",
     serviceList: ["a", "b"],
-    serviceImage: "s_plomeria_9",
+    serviceImage: "s_plomeria_8",
   },
   {
     idService: "110",
@@ -123,7 +123,7 @@ const services = [
     serviceName: "Instalación de tuberías hidrosanitarias",
     serviceDetail: "Servicio de instalación de tuberías hidrosanitarias",
     serviceList: ["a", "b"],
-    serviceImage: "s_plomeria_10",
+    serviceImage: "s_plomeria_9",
   },
 ];
 
