@@ -28,6 +28,39 @@ import s_electri_3 from "../assets/services/s_electri_3.jpg";
 import s_electri_4 from "../assets/services/s_electri_4.webp";
 import s_electri_5 from "../assets/services/s_electri_5.jpg";
 
+import s_obras_1 from "../assets/services/s_obras_1.jpg";
+import s_obras_2 from "../assets/services/s_obras_2.jpg";
+import s_obras_3 from "../assets/services/s_obras_3.jpg";
+import s_obras_4 from "../assets/services/s_obras_4.jpg";
+import s_obras_5 from "../assets/services/s_obras_5.jpg";
+import s_obras_6 from "../assets/services/s_obras_6.jpg";
+import s_obras_7 from "../assets/services/s_obras_7.jpg";
+import s_obras_8 from "../assets/services/s_obras_8.jpg";
+
+import s_gas_1 from "../assets/services/s_gas_1.jpg";
+import s_gas_2 from "../assets/services/s_gas_2.jpg";
+import s_gas_3 from "../assets/services/s_gas_3.webp";
+import s_gas_4 from "../assets/services/s_gas_4.jpg";
+import s_gas_5 from "../assets/services/s_gas_5.jpg";
+
+import s_pintura_1 from "../assets/services/s_pintura_1.jpg";
+import s_pintura_2 from "../assets/services/s_pintura_2.jpg";
+import s_pintura_3 from "../assets/services/s_pintura_3.jpg";
+import s_pintura_3a from "../assets/services/s_pintura_3a.jpg";
+import s_pintura_4 from "../assets/services/s_pintura_4.webp";
+import s_pintura_4a from "../assets/services/s_pintura_4a.webp";
+import s_pintura_5 from "../assets/services/s_pintura_5.jpg";
+
+import s_sold_1 from "../assets/services/s_sold_1.jpg";
+import s_sold_2 from "../assets/services/s_sold_2.jpg";
+import s_sold_3 from "../assets/services/s_sold_3.jpg";
+import s_sold_4 from "../assets/services/s_sold_4.jpg";
+import s_sold_5 from "../assets/services/s_sold_5.jpg";
+import s_sold_6 from "../assets/services/s_sold_6.jpg";
+import s_sold_7 from "../assets/services/s_sold_7.jpg";
+import s_sold_7a from "../assets/services/s_sold_7a.png";
+import s_sold_8 from "../assets/services/s_sold_8.jpg";
+
 export const images = {
   electricidad1,
   plomeria1,
@@ -61,3 +94,36 @@ imagesServices.set("s_electri_2", s_electri_2);
 imagesServices.set("s_electri_3", s_electri_3);
 imagesServices.set("s_electri_4", s_electri_4);
 imagesServices.set("s_electri_5", s_electri_5);
+
+imagesServices.set("s_obras_1", s_obras_1);
+imagesServices.set("s_obras_2", s_obras_2);
+imagesServices.set("s_obras_3", s_obras_3);
+imagesServices.set("s_obras_4", s_obras_4);
+imagesServices.set("s_obras_5", s_obras_5);
+imagesServices.set("s_obras_6", s_obras_6);
+imagesServices.set("s_obras_7", s_obras_7);
+imagesServices.set("s_obras_8", s_obras_8);
+
+imagesServices.set("s_gas_1", s_gas_1);
+imagesServices.set("s_gas_2", s_gas_2);
+imagesServices.set("s_gas_3", s_gas_3);
+imagesServices.set("s_gas_4", s_gas_4);
+imagesServices.set("s_gas_5", s_gas_5);
+
+imagesServices.set("s_pintura_1", s_pintura_1);
+imagesServices.set("s_pintura_2", s_pintura_2);
+imagesServices.set("s_pintura_3", s_pintura_3);
+imagesServices.set("s_pintura_3a", s_pintura_3a);
+imagesServices.set("s_pintura_4", s_pintura_4);
+imagesServices.set("s_pintura_4a", s_pintura_4a);
+imagesServices.set("s_pintura_5", s_pintura_5);
+
+imagesServices.set("s_sold_1", s_sold_1);
+imagesServices.set("s_sold_2", s_sold_2);
+imagesServices.set("s_sold_3", s_sold_3);
+imagesServices.set("s_sold_4", s_sold_4);
+imagesServices.set("s_sold_5", s_sold_5);
+imagesServices.set("s_sold_6", s_sold_6);
+imagesServices.set("s_sold_7", s_sold_7);
+imagesServices.set("s_sold_7a", s_sold_7a);
+imagesServices.set("s_sold_8", s_sold_8);

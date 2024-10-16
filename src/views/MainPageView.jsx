@@ -11,9 +11,16 @@ import reactSvg from "../assets/react.svg";
 import whatsappIcon from "../assets/whatsappIcon.png";
 import ServicesComponent from "../components/ServicesComponent.jsx";
 import scrollToTop from "../hooks/scrollToTop.jsx";
+import services from "../utils/services.jsx";
 
 function MainPageView() {
   scrollToTop();
+
+  let serviceSelecUno = services[Math.floor(Math.random() * services.length)];
+  let serviceSelecDos =
+    services[Math.floor(Math.random() * services.length) + 1];
+  let serviceSelecTres =
+    services[Math.floor(Math.random() * services.length) - 1];
 
   return (
     <>
@@ -63,16 +70,28 @@ function MainPageView() {
         titleSection="SOLICITA NUESTROS SERVICIOS DESTACADOS"
       >
         <CardComponent
-          srcImgCard={reactSvg}
-          titleCard={"Instalación y Adecuación de neveras"}
-          descriptionCard={
-            "Esta es la descripcion de Instalación y Adecuación de neveras."
-          }
+          key={serviceSelecUno.idService}
+          titleCard={serviceSelecUno.serviceName}
+          descriptionCard={serviceSelecUno.serviceDetail}
+          srcImgCard={serviceSelecUno.serviceImage}
+          linkTo={`${serviceSelecUno.idService}`}
+          dynamicImage
         />
         <CardComponent
-          srcImgCard={reactSvg}
-          titleCard={"Instalación de Gas"}
-          descriptionCard={"Esta es la descripcion de Instalación de Gas."}
+          key={serviceSelecDos.idService}
+          titleCard={serviceSelecDos.serviceName}
+          descriptionCard={serviceSelecDos.serviceDetail}
+          srcImgCard={serviceSelecDos.serviceImage}
+          linkTo={`${serviceSelecDos.idService}`}
+          dynamicImage
+        />
+        <CardComponent
+          key={serviceSelecTres.idService}
+          titleCard={serviceSelecTres.serviceName}
+          descriptionCard={serviceSelecTres.serviceDetail}
+          srcImgCard={serviceSelecTres.serviceImage}
+          linkTo={`${serviceSelecTres.idService}`}
+          dynamicImage
         />
       </SectionComponent>
       <SectionComponent heightSection="100%" colorBackground="#fff">

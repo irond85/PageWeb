@@ -44,7 +44,7 @@ const ServicesComponent = () => {
         />
         <CardComponent
           srcImgCard={redGas}
-          titleCard={"Red de Gas"}
+          titleCard={"Gas"}
           descriptionCard={"Servicios de redes de gas."}
           linkTo="services/gases"
         />

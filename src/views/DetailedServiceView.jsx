@@ -47,7 +47,7 @@ function DetailedServiceView() {
             <div className="row">
               <Paragraph style={{ fontSize: "18px" }}>
                 Ofrecemos un servicio profesional y completo de{" "}
-                {serviceSelected.serviceDetail}. <br />
+                {serviceSelected.serviceDetail} <br />
                 Este servicio incluye:
               </Paragraph>
             </div>
