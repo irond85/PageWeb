@@ -23,26 +23,50 @@ const OptionsComponent = () => {
   return (
     <Row>
       <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-3">
-        <Card hoverable style={styleCard}>
-          <WhatsAppOutlined style={styleButtons} />
-          <p>Chat virtual</p>
-        </Card>
+        <a
+          style={{ textDecoration: "none" }}
+          target="_blank"
+          href="https://api.whatsapp.com/send/?phone=573016264147&text&type=phone_number&app_absent=0"
+        >
+          <Card hoverable style={styleCard}>
+            <WhatsAppOutlined style={styleButtons} />
+            <p>Chat virtual</p>
+          </Card>
+        </a>
       </div>
       <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-3">
-        <Card hoverable style={styleCard}>
-          <PhoneOutlined style={styleButtons} />
-          <p>Línea telefónica</p>
-        </Card>
+        <a
+          style={{ textDecoration: "none" }}
+          target="_blank"
+          href="https://api.whatsapp.com/send/?phone=573016264147&text&type=phone_number&app_absent=0"
+        >
+          <Card hoverable style={styleCard}>
+            <PhoneOutlined style={styleButtons} />
+            <p>Línea telefónica</p>
+          </Card>
+        </a>
       </div>
       <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-3">
         <Card hoverable style={styleCard}>
           <div>
             <div className="row">
               <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <InstagramOutlined style={styleButtons} />
+                <a
+                  style={{ textDecoration: "none" }}
+                  target="_blank"
+                  href="https://www.instagram.com/plomerosyconstructores7/?igsh=c2RxZ3p4Ymt3aWxk"
+                >
+                  <InstagramOutlined style={styleButtons} />
+                </a>
               </div>
               <div className="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <FacebookOutlined style={styleButtons} />
+                <a
+                  style={{ textDecoration: "none" }}
+                  target="_blank"
+                  href="https://www.facebook.com/profile.php?id=61565573373718&mibextid=ZbWKwL"
+                >
+                  <FacebookOutlined style={styleButtons} />
+                </a>
               </div>
             </div>
             <div className="row">

@@ -44,8 +44,13 @@ function MainPageView() {
           <Button
             type="primary"
             shape="round"
-            style={{ background: "#fff", color: "#000" }}
+            style={{
+              background: "#fff",
+              color: "#000",
+              textDecoration: "none",
+            }}
             size="large"
+            href="https://api.whatsapp.com/send/?phone=573016264147&text&type=phone_number&app_absent=0"
           >
             <img
               style={{ width: "100%", height: "100%", objectFit: "contain" }}
@@ -72,7 +77,6 @@ function MainPageView() {
         <CardComponent
           key={serviceSelecUno.idService}
           titleCard={serviceSelecUno.serviceName}
-          descriptionCard={serviceSelecUno.serviceDetail}
           srcImgCard={serviceSelecUno.serviceImage}
           linkTo={`${serviceSelecUno.idService}`}
           dynamicImage
@@ -80,7 +84,6 @@ function MainPageView() {
         <CardComponent
           key={serviceSelecDos.idService}
           titleCard={serviceSelecDos.serviceName}
-          descriptionCard={serviceSelecDos.serviceDetail}
           srcImgCard={serviceSelecDos.serviceImage}
           linkTo={`${serviceSelecDos.idService}`}
           dynamicImage
@@ -88,7 +91,6 @@ function MainPageView() {
         <CardComponent
           key={serviceSelecTres.idService}
           titleCard={serviceSelecTres.serviceName}
-          descriptionCard={serviceSelecTres.serviceDetail}
           srcImgCard={serviceSelecTres.serviceImage}
           linkTo={`${serviceSelecTres.idService}`}
           dynamicImage
@@ -180,8 +182,13 @@ function MainPageView() {
           <Button
             type="primary"
             shape="round"
-            style={{ background: "#fff", color: "#000" }}
+            style={{
+              background: "#fff",
+              color: "#000",
+              textDecoration: "none",
+            }}
             size="large"
+            href="https://api.whatsapp.com/send/?phone=573016264147&text&type=phone_number&app_absent=0"
           >
             <strong>SOLICITAR SERVICIO</strong>
           </Button>

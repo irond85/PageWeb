@@ -33,7 +33,6 @@ function ServicesView() {
             <CardComponent
               key={service.idService}
               titleCard={service.serviceName}
-              descriptionCard={service.serviceDetail}
               srcImgCard={service.serviceImage}
               linkTo={`${service.idService}`}
               colsFormat={false}

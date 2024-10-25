@@ -28,10 +28,20 @@ const FooterComponent = () => {
             Síguenos
           </Title>
           <Space size="middle" style={styleText}>
-            <FacebookFilled />
-            <TwitterSquareFilled />
-            <InstagramFilled />
-            <LinkedinFilled />
+            <a
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=61565573373718&mibextid=ZbWKwL"
+            >
+              <FacebookFilled />
+            </a>
+            <a
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              href="https://www.instagram.com/plomerosyconstructores7/?igsh=c2RxZ3p4Ymt3aWxk"
+            >
+              <InstagramFilled />
+            </a>
           </Space>
         </div>
         <div className="col-12 col-sm-5 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
@@ -41,13 +51,13 @@ const FooterComponent = () => {
           <Paragraph style={styleText}>
             Escríbenos:{" "}
             <a
-              href="mailto:hola@sosasistencia.com"
+              href="mailto:plomerosyconstructores.sas@gmail.com"
               style={{ color: "#1890ff" }}
             >
-              hola@correo.com
+              plomerosyconstructores.sas@gmail.com
             </a>
             <br />
-            Colombia: +57 300 912 4554 | +57 317 659 5965
+            Colombia: +57 301 626 41 47
           </Paragraph>
         </div>
         <div className="col-12 col-sm-5 col-md-5 col-lg-3 col-xl-3 col-xxl-3">

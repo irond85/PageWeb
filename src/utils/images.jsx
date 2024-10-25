@@ -61,6 +61,21 @@ import s_sold_7 from "../assets/services/s_sold_7.jpg";
 import s_sold_7a from "../assets/services/s_sold_7a.png";
 import s_sold_8 from "../assets/services/s_sold_8.jpg";
 
+import s_inst_1 from "../assets/services/s_inst_1.jpg";
+import s_inst_2 from "../assets/services/s_inst_2.jpg";
+import s_inst_3 from "../assets/services/s_inst_3.jpg";
+import s_inst_4 from "../assets/services/s_inst_4.jpg";
+import s_inst_5 from "../assets/services/s_inst_5.jpg";
+import s_inst_6 from "../assets/services/s_inst_6.jpg";
+import s_inst_7 from "../assets/services/s_inst_7.jpg";
+import s_inst_8 from "../assets/services/s_inst_8.jpg";
+
+import s_vidr_1 from "../assets/services/s_vidr_1.jpg";
+import s_vidr_2 from "../assets/services/s_vidr_2.jpg";
+import s_vidr_3 from "../assets/services/s_vidr_3.jpg";
+import s_vidr_4 from "../assets/services/s_vidr_4.jpg";
+import s_vidr_5 from "../assets/services/s_vidr_5.webp";
+
 export const images = {
   electricidad1,
   plomeria1,
@@ -127,3 +142,18 @@ imagesServices.set("s_sold_6", s_sold_6);
 imagesServices.set("s_sold_7", s_sold_7);
 imagesServices.set("s_sold_7a", s_sold_7a);
 imagesServices.set("s_sold_8", s_sold_8);
+
+imagesServices.set("s_inst_1", s_inst_1);
+imagesServices.set("s_inst_2", s_inst_2);
+imagesServices.set("s_inst_3", s_inst_3);
+imagesServices.set("s_inst_4", s_inst_4);
+imagesServices.set("s_inst_5", s_inst_5);
+imagesServices.set("s_inst_6", s_inst_6);
+imagesServices.set("s_inst_7", s_inst_7);
+imagesServices.set("s_inst_8", s_inst_8);
+
+imagesServices.set("s_vidr_1", s_vidr_1);
+imagesServices.set("s_vidr_2", s_vidr_2);
+imagesServices.set("s_vidr_3", s_vidr_3);
+imagesServices.set("s_vidr_4", s_vidr_4);
+imagesServices.set("s_vidr_5", s_vidr_5);
