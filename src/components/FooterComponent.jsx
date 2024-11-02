@@ -51,7 +51,7 @@ const FooterComponent = () => {
           <Paragraph style={styleText}>
             Escríbenos:{" "}
             <a
-              href="mailto:plomerosyconstructores.sas@gmail.com"
+              href="mailto:plomerosyconstructoressas@gmail.com"
               style={{ color: "#1890ff" }}
             >
               plomerosyconstructores.sas@gmail.com

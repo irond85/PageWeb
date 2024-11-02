@@ -130,15 +130,6 @@ function MainPageView() {
           />
           <CardComponent
             srcImgCard={reactSvg}
-            titleCard={"Agendamiento de Servicios"}
-            descriptionCard={
-              "La cita será agendada en el horario que usted prefiera, sujeto a confirmación de disponibilidad."
-            }
-            hoverCard={false}
-            dividerCard={false}
-          />
-          <CardComponent
-            srcImgCard={reactSvg}
             titleCard={"Multiples Servicios"}
             descriptionCard={
               "Gran variedad de servicios para atender sus necesidades."
@@ -196,44 +187,6 @@ function MainPageView() {
       </SectionComponent>
       <SectionComponent colorBackground="#fff" heightSection="100%">
         <StatsComponent />
-      </SectionComponent>
-      <SectionComponent heightSection="100%" titleSection="MANTENTE INFORMADO">
-        <div className="row news-wrapper">
-          <CardComponent
-            srcImgCard={reactSvg}
-            titleCard={"IMPORTANCIA DE LA LIMPIEZA DE CANALETAS"}
-            descriptionCard={
-              "La temporada de lluvias puede ser perjudicial si no estás preparado. Manteniendo tus canaletas limpias, prolongarás la vida de tu techo y evitarás problemas mayores en tu hogar."
-            }
-            colsFormat={false}
-          />
-          <CardComponent
-            srcImgCard={reactSvg}
-            titleCard={"TRANSFORMA TU HOGAR CON PEQUEÑOS CAMBIOS"}
-            descriptionCard={
-              "Renueva tu hogar sin gastar mucho. Pequeños cambios pueden transformar tus espacios y mejorar tu calidad de vida."
-            }
-            colsFormat={false}
-          />
-          <CardComponent
-            srcImgCard={reactSvg}
-            titleCard={"¿POR QUÉ MI NEVERA BOTA AGUA?"}
-            descriptionCard={
-              "Un poco de agua en la nevera es normal, pero los charcos excesivos pueden indicar un problema. Limpia regularmente, verifica las juntas y evita sobrecargarla. Con estos sencillos cuidados, prolongarás la vida útil de tu refrigerador."
-            }
-            colsFormat={false}
-          />
-          <CardComponent
-            srcImgCard={reactSvg}
-            titleCard={
-              "BENEFICIOS DEL DIAGNÓSTICO Y MANTENIMIENTO PREVENTIVO PARA EL HOGAR"
-            }
-            descriptionCard={
-              "El cuidado preventivo de nuestro hogar es una inversión en nuestro bienestar y en el futuro de nuestra vivienda."
-            }
-            colsFormat={false}
-          />
-        </div>
       </SectionComponent>
       <SectionComponent
         colorBackground="#FFF"

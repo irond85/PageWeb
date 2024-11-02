@@ -16,19 +16,19 @@ const StatsComponent = () => {
       <div className="row" style={styleRow}>
         <div className="col-12 col-sm-5 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
           <Card>
-            <Statistic title="Total de servicios prestados" value={474259} />
+            <Statistic title="Total de servicios prestados" value={1759} />
           </Card>
         </div>
         <div className="col-12 col-sm-5 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
           <Card>
-            <Statistic title="Servicios prestados este año" value={39000} />
+            <Statistic title="Servicios prestados este año" value={431} />
           </Card>
         </div>
       </div>
       <div className="row" style={styleRow}>
         <div className="col-12 col-sm-5 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
           <Card>
-            <Statistic title="Servicios del mes anterior" value={4969} />
+            <Statistic title="Servicios del mes anterior" value={53} />
           </Card>
         </div>
         <div className="col-12 col-sm-5 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
