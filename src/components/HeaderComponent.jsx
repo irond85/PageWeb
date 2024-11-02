@@ -43,7 +43,7 @@ const HeaderComponent = () => {
           <MenuHeaderComponent />
         </Col>
         <div>
-          <Link to="/PageWeb/">
+          <Link to="/">
             <HomeOutlined style={{ fontSize: "2rem", color: "#08c" }} />
           </Link>
         </div>
