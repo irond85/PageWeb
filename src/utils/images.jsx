@@ -76,6 +76,19 @@ import s_vidr_3 from "../assets/services/s_vidr_3.jpg";
 import s_vidr_4 from "../assets/services/s_vidr_4.jpg";
 import s_vidr_5 from "../assets/services/s_vidr_5.webp";
 
+import c_2p from "../assets/clients/c_2p.jpg";
+import c_camse from "../assets/clients/c_camse.jpg";
+import c_ie from "../assets/clients/c_ie.jpg";
+import c_ja from "../assets/clients/c_ja.jpg";
+import c_lc from "../assets/clients/c_lc.jpg";
+import c_lfh from "../assets/clients/c_lfh.png";
+import c_vt from "../assets/clients/c_vt.jpg";
+
+import tools from "../assets/tools.jpg";
+import trust from "../assets/trust.jpg";
+import experts from "../assets/experts.png";
+import lotServices from "../assets/lotServices.png";
+
 export const images = {
   electricidad1,
   plomeria1,
@@ -89,6 +102,10 @@ export const images = {
   pintura,
   banner1,
   banner2,
+  tools,
+  trust,
+  experts,
+  lotServices,
 };
 
 export let imagesServices = new Map();
@@ -157,3 +174,13 @@ imagesServices.set("s_vidr_2", s_vidr_2);
 imagesServices.set("s_vidr_3", s_vidr_3);
 imagesServices.set("s_vidr_4", s_vidr_4);
 imagesServices.set("s_vidr_5", s_vidr_5);
+
+export const imagesClients = {
+  c_2p,
+  c_camse,
+  c_ie,
+  c_ja,
+  c_lc,
+  c_lfh,
+  c_vt,
+};

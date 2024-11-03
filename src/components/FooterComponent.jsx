@@ -1,11 +1,7 @@
 import React from "react";
 import { Layout, Row, Typography, Space } from "antd";
-import {
-  FacebookFilled,
-  TwitterSquareFilled,
-  InstagramFilled,
-  LinkedinFilled,
-} from "@ant-design/icons";
+import { FacebookFilled, InstagramFilled } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 const { Footer } = Layout;
 const { Title, Paragraph } = Typography;
@@ -52,12 +48,12 @@ const FooterComponent = () => {
             Escríbenos:{" "}
             <a
               href="mailto:plomerosyconstructoressas@gmail.com"
-              style={{ color: "#1890ff" }}
+              style={{ color: "#666" }}
             >
-              plomerosyconstructores.sas@gmail.com
+              plomerosyconstructoressas@gmail.com
             </a>
             <br />
-            Colombia: +57 301 626 41 47
+            Colombia +57: 310 626 41 47 - 320 717 28 87
           </Paragraph>
         </div>
         <div className="col-12 col-sm-5 col-md-5 col-lg-3 col-xl-3 col-xxl-3">
@@ -76,23 +72,93 @@ const FooterComponent = () => {
           <Title level={2} style={{ color: "#666" }}>
             Servicios
           </Title>
-          <ul style={{ listStyle: "none", padding: 0 }}>
-            <li>
-              <a href="#" style={styleText}>
-                Plomería
-              </a>
-            </li>
-            <li>
-              <a href="#" style={styleText}>
-                Electricidad
-              </a>
-            </li>
-            <li>
-              <a href="#" style={styleText}>
-                Instalaciones
-              </a>
-            </li>
-          </ul>
+          <div
+            className="row"
+            style={{
+              margin: "0",
+              color: "#666",
+              fontSize: "16px",
+              textDecoration: "none",
+            }}
+          >
+            <div className="col-12 col-sm-5 col-md-5 col-lg-3 col-xl-3 col-xxl-6">
+              <ul
+                style={{
+                  listStyle: "none",
+                  padding: 0,
+                }}
+              >
+                <li>
+                  <Link
+                    to="/services/plomeria"
+                    style={{ textDecoration: "none", color: "#666" }}
+                  >
+                    Plomería
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/electricidad"
+                    style={{ textDecoration: "none", color: "#666" }}
+                  >
+                    Electricidad
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/obras"
+                    style={{ textDecoration: "none", color: "#666" }}
+                  >
+                    Obras y Reformas
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/gases"
+                    style={{ textDecoration: "none", color: "#666" }}
+                  >
+                    Gas
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className="col-12 col-sm-5 col-md-5 col-lg-3 col-xl-3 col-xxl-6">
+              <ul style={{ listStyle: "none", padding: 0 }}>
+                <li>
+                  <Link
+                    to="/services/instalaciones"
+                    style={{ textDecoration: "none", color: "#666" }}
+                  >
+                    Instalaciones
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/pintura"
+                    style={{ textDecoration: "none", color: "#666" }}
+                  >
+                    Pintura
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/soldadura"
+                    style={{ textDecoration: "none", color: "#666" }}
+                  >
+                    Soldadura
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/services/vidrieria"
+                    style={{ textDecoration: "none", color: "#666" }}
+                  >
+                    Vidrieria
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </Row>
       <div style={{ marginTop: 16 }}>

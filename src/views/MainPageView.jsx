@@ -6,12 +6,14 @@ import CardComponent from "../components/CardComponent.jsx";
 import OptionsComponent from "../components/OptionsComponent.jsx";
 import StatsComponent from "../components/StatsComponent.jsx";
 import FooterComponent from "../components/FooterComponent.jsx";
-import { Button } from "antd";
-import reactSvg from "../assets/react.svg";
-import whatsappIcon from "../assets/whatsappIcon.png";
 import ServicesComponent from "../components/ServicesComponent.jsx";
+import ClientsComponent from "../components/ClientsComponent.jsx";
+import { Button } from "antd";
+import whatsappIcon from "../assets/whatsappIcon.png";
 import scrollToTop from "../hooks/scrollToTop.jsx";
 import services from "../utils/services.jsx";
+import { images } from "../utils/images.jsx";
+const { tools, trust, lotServices, experts } = images;
 
 function MainPageView() {
   scrollToTop();
@@ -50,7 +52,7 @@ function MainPageView() {
               textDecoration: "none",
             }}
             size="large"
-            href="https://api.whatsapp.com/send/?phone=573016264147&text&type=phone_number&app_absent=0"
+            href="https://api.whatsapp.com/send/?phone=573106264147&text&type=phone_number&app_absent=0"
           >
             <img
               style={{ width: "100%", height: "100%", objectFit: "contain" }}
@@ -62,13 +64,15 @@ function MainPageView() {
         </div>
       </SectionComponent>
 
-      <SectionComponent
-        colorBackground="#FFF"
-        heightSection="100%"
-        titleSection="Nuestros Servicios"
-      >
-        <ServicesComponent />
-      </SectionComponent>
+      <div id="services">
+        <SectionComponent
+          colorBackground="#FFF"
+          heightSection="100%"
+          titleSection="Nuestros Servicios"
+        >
+          <ServicesComponent />
+        </SectionComponent>
+      </div>
       <br />
       <SectionComponent
         heightSection="100%"
@@ -78,43 +82,45 @@ function MainPageView() {
           key={serviceSelecUno.idService}
           titleCard={serviceSelecUno.serviceName}
           srcImgCard={serviceSelecUno.serviceImage}
-          linkTo={`${serviceSelecUno.idService}`}
+          linkTo={`/services/${serviceSelecUno.serviceType}/${serviceSelecUno.idService}`}
           dynamicImage
         />
         <CardComponent
           key={serviceSelecDos.idService}
           titleCard={serviceSelecDos.serviceName}
           srcImgCard={serviceSelecDos.serviceImage}
-          linkTo={`${serviceSelecDos.idService}`}
+          linkTo={`/services/${serviceSelecDos.serviceType}/${serviceSelecDos.idService}`}
           dynamicImage
         />
         <CardComponent
           key={serviceSelecTres.idService}
           titleCard={serviceSelecTres.serviceName}
           srcImgCard={serviceSelecTres.serviceImage}
-          linkTo={`${serviceSelecTres.idService}`}
+          linkTo={`/services/${serviceSelecTres.serviceType}/${serviceSelecTres.idService}`}
           dynamicImage
         />
       </SectionComponent>
-      <SectionComponent heightSection="100%" colorBackground="#fff">
-        <div
-          className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
-          style={{ textAlign: "center", alignContent: "center" }}
-        >
-          <div className="row">
-            <h1>PONTE EN CONTACTO</h1>
+      <div id="contacto">
+        <SectionComponent heightSection="100%" colorBackground="#fff">
+          <div
+            className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            style={{ textAlign: "center", alignContent: "center" }}
+          >
+            <div className="row">
+              <h1>PONTE EN CONTACTO</h1>
+            </div>
+            <div className="row">
+              <p>
+                Contamos con varias opciones para que te comuniques con nosotros
+                y recibas una solución rápida.
+              </p>
+            </div>
           </div>
-          <div className="row">
-            <p>
-              Contamos con varias opciones para que te comuniques con nosotros y
-              recibas una solución rápida.
-            </p>
+          <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+            <OptionsComponent />
           </div>
-        </div>
-        <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-          <OptionsComponent />
-        </div>
-      </SectionComponent>
+        </SectionComponent>
+      </div>
       <SectionComponent
         heightSection="100%"
         titleSection="¿POR QUÉ ELEGIRNOS?"
@@ -122,14 +128,14 @@ function MainPageView() {
       >
         <div className="row" style={{ justifyContent: "center" }}>
           <CardComponent
-            srcImgCard={reactSvg}
+            srcImgCard={experts}
             titleCard={"Técnicos Especializados"}
             descriptionCard={"En cada uno de nuestros servicios."}
             hoverCard={false}
             dividerCard={false}
           />
           <CardComponent
-            srcImgCard={reactSvg}
+            srcImgCard={lotServices}
             titleCard={"Multiples Servicios"}
             descriptionCard={
               "Gran variedad de servicios para atender sus necesidades."
@@ -138,7 +144,7 @@ function MainPageView() {
             dividerCard={false}
           />
           <CardComponent
-            srcImgCard={reactSvg}
+            srcImgCard={tools}
             titleCard={"Herramientas Especializadas"}
             descriptionCard={
               "Contamos con herramientas calificadas y certificadas para cada servicio."
@@ -147,7 +153,7 @@ function MainPageView() {
             dividerCard={false}
           />
           <CardComponent
-            srcImgCard={reactSvg}
+            srcImgCard={trust}
             titleCard={"Garantía y confianza"}
             descriptionCard={"La certeza de un trabajo bien hecho."}
             hoverCard={false}
@@ -179,7 +185,7 @@ function MainPageView() {
               textDecoration: "none",
             }}
             size="large"
-            href="https://api.whatsapp.com/send/?phone=573016264147&text&type=phone_number&app_absent=0"
+            href="https://api.whatsapp.com/send/?phone=573106264147&text&type=phone_number&app_absent=0"
           >
             <strong>SOLICITAR SERVICIO</strong>
           </Button>
@@ -193,10 +199,7 @@ function MainPageView() {
         heightSection="100%"
         titleSection="NUESTROS CLIENTES"
       >
-        <div className="row news-wrapper">
-          <img src="out" alt="primera imagen" />
-          <img src="out" alt="segunda imagen" />
-        </div>
+        <ClientsComponent />
       </SectionComponent>
       <FooterComponent />
       <FloatButtonComponent />

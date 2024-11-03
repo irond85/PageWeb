@@ -47,15 +47,10 @@ const CarouselComponent = () => (
               objectPosition: "50% 60%",
             }}
           />
-          <h2 style={{ transform: "translate(0%, -150%)" }}>
+          <h2 style={{ transform: "translate(0%, -150%)", color: "#000" }}>
             Nuestro equipo de técnicos ofrecen un trabajo rápido y de calidad al
             problema de tus tuberias rotas.
           </h2>
-        </div>
-      </div>
-      <div>
-        <div style={contentStyle}>
-          <img src="" alt="Tercera imagen" />
         </div>
       </div>
     </Carousel>

@@ -26,7 +26,7 @@ const OptionsComponent = () => {
         <a
           style={{ textDecoration: "none" }}
           target="_blank"
-          href="https://api.whatsapp.com/send/?phone=573016264147&text&type=phone_number&app_absent=0"
+          href="https://api.whatsapp.com/send/?phone=573106264147&text&type=phone_number&app_absent=0"
         >
           <Card hoverable style={styleCard}>
             <WhatsAppOutlined style={styleButtons} />
@@ -38,7 +38,7 @@ const OptionsComponent = () => {
         <a
           style={{ textDecoration: "none" }}
           target="_blank"
-          href="https://api.whatsapp.com/send/?phone=573016264147&text&type=phone_number&app_absent=0"
+          href="https://api.whatsapp.com/send/?phone=573106264147&text&type=phone_number&app_absent=0"
         >
           <Card hoverable style={styleCard}>
             <PhoneOutlined style={styleButtons} />

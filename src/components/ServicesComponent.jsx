@@ -23,59 +23,41 @@ const ServicesComponent = () => {
         <CardComponent
           srcImgCard={plomeria2}
           titleCard={"Plomeria"}
-          descriptionCard={
-            "Esta es la descripcion de plomeria y sus servicios."
-          }
           linkTo="services/plomeria"
         />
         <CardComponent
           srcImgCard={electricidad1}
           titleCard={"Electricidad"}
-          descriptionCard={
-            "Esta es la descripcion de electricidad y sus servicios."
-          }
           linkTo="services/electricidad"
         />
         <CardComponent
           srcImgCard={obras}
           titleCard={"Obras y Reformas"}
-          descriptionCard={"Esta es la descripcion de albañileria."}
           linkTo="services/obras"
         />
         <CardComponent
           srcImgCard={redGas}
           titleCard={"Gas"}
-          descriptionCard={"Servicios de redes de gas."}
           linkTo="services/gases"
         />
         <CardComponent
           srcImgCard={instalaciones}
           titleCard={"Instalaciones"}
-          descriptionCard={
-            "Servicios de instalación de multiples electrodomesticos y productos."
-          }
           linkTo="services/instalaciones"
         />
         <CardComponent
           srcImgCard={pintura}
           titleCard={"Pintura y Acabados"}
-          descriptionCard={
-            "Esta es la descripcion de servicios de Pintura y acabados."
-          }
           linkTo="services/pintura"
         />
         <CardComponent
           srcImgCard={soldadura}
           titleCard={"Soldadura"}
-          descriptionCard={"Esta es la descripcion de servicios de Soldadura."}
           linkTo="services/soldadura"
         />
         <CardComponent
           srcImgCard={vidrieria}
           titleCard={"Vidrieria"}
-          descriptionCard={
-            "Esta es la descripcion de vidrieria y sus servicios."
-          }
           linkTo="services/vidrieria"
         />
       </div>

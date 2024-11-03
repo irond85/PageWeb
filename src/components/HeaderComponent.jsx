@@ -33,11 +33,13 @@ const HeaderComponent = () => {
         }}
       >
         <div className="divLogo">
-          <img
-            className="logo"
-            src={logo}
-            alt="Logo pagina web"
-          />
+          <Link to="/">
+            <img
+              className="logo"
+              src={logo}
+              alt="Logo plomeros y constructores sas"
+            />
+          </Link>
         </div>
         <Col span={12} style={{ marginRight: "20%" }}>
           <MenuHeaderComponent />

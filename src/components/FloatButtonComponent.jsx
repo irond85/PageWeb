@@ -11,7 +11,7 @@ const FloatButtonComponent = () => {
             style={{ width: "72px", height: "72px" }}
             type="text"
             shape="circle"
-            href="https://api.whatsapp.com/send/?phone=573016264147&text&type=phone_number&app_absent=0"
+            href="https://api.whatsapp.com/send/?phone=573106264147&text&type=phone_number&app_absent=0"
             target="_blank"
           >
             <img
@@ -22,13 +22,6 @@ const FloatButtonComponent = () => {
           </Button>
         </Tooltip>
       </div>
-      {/* <FloatButton
-        style={{ width: "32px", height: "32px" }}
-        icon={<WhatsAppOutlined />}
-        href="https://api.whatsapp.com/send/?phone=573016264147&text&type=phone_number&app_absent=0"
-        target="_blank"
-        tooltip={<div>Escribenos a nuestro Whatsapp!</div>}
-      /> */}
     </>
   );
 };

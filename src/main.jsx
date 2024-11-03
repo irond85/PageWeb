@@ -13,10 +13,7 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route
-          path="/services/:serviceType"
-          element={<ServicesView />}
-        />
+        <Route path="/services/:serviceType" element={<ServicesView />} />
         <Route
           path="/services/:serviceType/:idService"
           loader={({ params }) => {
