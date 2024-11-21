@@ -82,14 +82,6 @@ const services = [
     serviceImage: "s_plomeria_9",
   },
   {
-    idService: "110",
-    serviceType: "plomeria",
-    serviceName: "Instalación de tuberías hidrosanitarias",
-    serviceDetail: "Instalación de tuberías hidrosanitarias.",
-    serviceList: ["a", "b"],
-    serviceImage: "s_plomeria_9",
-  },
-  {
     idService: "201",
     serviceType: "electricidad",
     serviceName:
@@ -376,7 +368,7 @@ const services = [
   {
     idService: "705",
     serviceType: "instalaciones",
-    serviceName: "Instalación de mmalas de protección para balcones",
+    serviceName: "Instalación de malas de protección para balcones",
     serviceDetail: "",
     serviceList: ["a", "b"],
     serviceImage: "s_inst_5",

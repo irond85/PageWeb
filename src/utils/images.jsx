@@ -2,10 +2,9 @@ import banner1 from "../assets/services/banner1.jpg";
 import banner2 from "../assets/services/banner2.jpg";
 import destaponamiento from "../assets/services/destaponamiento.jpg";
 import electricidad1 from "../assets/services/electricidad_1.jpg";
-import instalaciones from "../assets/services/instalaciones.png";
+import instalaciones from "../assets/services/instalaciones.jpg";
 import obras from "../assets/services/obras.jpg";
 import pintura from "../assets/services/pintura.jpg";
-import plomeria1 from "../assets/services/plomeria_1.jpg";
 import plomeria2 from "../assets/services/plomeria_2.jpg";
 import redGas from "../assets/services/red_gas.jpg";
 import soldadura from "../assets/services/soldadura.png";
@@ -91,7 +90,6 @@ import lotServices from "../assets/lotServices.png";
 
 export const images = {
   electricidad1,
-  plomeria1,
   plomeria2,
   vidrieria,
   destaponamiento,
